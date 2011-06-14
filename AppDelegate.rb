@@ -5,9 +5,10 @@
 # Created by Haris Amin on 6/13/11.
 # Copyright __MyCompanyName__ 2011. All rights reserved.
 #
-
+require 'mail'
 class AppDelegate
   attr_writer :window
+	attr_accessor :emails
 
   # Returns the support folder for the application, used to store the Core Data
   # store file.  This code uses a folder named "KyatchiApp" for
