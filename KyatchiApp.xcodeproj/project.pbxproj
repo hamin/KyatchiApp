@@ -14,6 +14,7 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		8F0C5D830EADC1EE007FBAA3 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8F0C5D820EADC1EE007FBAA3 /* AppDelegate.rb */; };
 		8F0C5D890EADC379007FBAA3 /* MacRubyApp.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C5D880EADC379007FBAA3 /* MacRubyApp.xcdatamodel */; };
+		91802D3A13A81D89007AD769 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 91802D3913A81D89007AD769 /* AsyncSocket.m */; };
 		CD68AC5A11C9455700CF9405 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD68AC5911C9455700CF9405 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		8D1107320486CEB800E47090 /* KyatchiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyatchiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0C5D820EADC1EE007FBAA3 /* AppDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
 		8F0C5D880EADC379007FBAA3 /* MacRubyApp.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MacRubyApp.xcdatamodel; sourceTree = "<group>"; };
+		91802D3813A81D89007AD769 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		91802D3913A81D89007AD769 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
 		CD65E1A611C941D600E46B3D /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +52,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				91802D3813A81D89007AD769 /* AsyncSocket.h */,
+				91802D3913A81D89007AD769 /* AsyncSocket.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				8F0C5D890EADC379007FBAA3 /* MacRubyApp.xcdatamodel in Sources */,
+				91802D3A13A81D89007AD769 /* AsyncSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
