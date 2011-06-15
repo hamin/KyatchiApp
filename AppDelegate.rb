@@ -9,6 +9,25 @@ require 'mail'
 class AppDelegate
   attr_writer :window
 	attr_accessor :emails
+	
+	def awakeFromNib
+		#seedData
+	end
+	
+	
+  def seedData
+    email = NSEntityDescription.insertNewObjectForEntityForName("Email", inManagedObjectContext:@managedObjectContext)
+		
+		email.from = "hristo@dailyburn.com"
+		email.to = "foo@example.com"
+		email.subject = "Something cool"
+		email.received = NSDate.date
+		email.raw = "SDFASFHHJJL BABY HRISTO"
+		email.html = "<h1> OK</h1>"
+		email.plain = "OK THERE BUDDY"
+    
+    @managedObjectContext.save(nil)
+  end
 
   # Returns the support folder for the application, used to store the Core Data
   # store file.  This code uses a folder named "KyatchiApp" for
