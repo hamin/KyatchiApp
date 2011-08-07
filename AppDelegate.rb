@@ -4,14 +4,16 @@
 #
 # Created by Haris Amin on 6/13/11.
 # Copyright __MyCompanyName__ 2011. All rights reserved.
-#
-require 'mail'
+#÷
+require 'smtp_server'
+
 class AppDelegate
   attr_writer :window
-	attr_accessor :emails
+    attr_accessor :emails
 	
 	def awakeFromNib
 		#seedData
+        Thread.new{ SMTPServer.new(:moc => @managedObjectContext) }
 	end
 	
 	

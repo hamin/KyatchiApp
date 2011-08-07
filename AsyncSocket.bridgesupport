@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<constant name='AsyncSocketErrorDomain' type='@'/>
+<constant name='AsyncSocketException' type='@'/>
+<enum name='AsyncSocketCFSocketError' value='-1'/>
+<enum name='AsyncSocketCanceledError' value='1'/>
+<enum name='AsyncSocketNoError' value='0'/>
+<enum name='AsyncSocketReadMaxedOutError' value='2'/>
+<enum name='AsyncSocketReadTimeoutError' value='3'/>
+<enum name='AsyncSocketWriteTimeoutError' value='4'/>
+<class name='AsyncSocket'>
+<method selector='acceptOnAddress:port:error:'>
+<retval type='B'/>
+</method>
+<method selector='acceptOnPort:error:'>
+<retval type='B'/>
+</method>
+<method selector='canSafelySetDelegate'>
+<retval type='B'/>
+</method>
+<method selector='connectToAddress:error:'>
+<retval type='B'/>
+</method>
+<method selector='connectToHost:onPort:error:'>
+<retval type='B'/>
+</method>
+<method selector='isConnected'>
+<retval type='B'/>
+</method>
+<method selector='isIPv4'>
+<retval type='B'/>
+</method>
+<method selector='isIPv6'>
+<retval type='B'/>
+</method>
+<method selector='moveToRunLoop:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='onSocketWillConnect:'>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='AsyncSocketDelegate'>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='onSocket:didAcceptNewSocket:'/>
+<method type64='v36@0:8@16@24S32' type='v20@0:4@8@12S16' selector='onSocket:didConnectToHost:port:'/>
+<method type64='v40@0:8@16@24q32' type='v20@0:4@8@12l16' selector='onSocket:didReadData:withTag:'/>
+<method type64='v40@0:8@16q24q32' type='v20@0:4@8l12l16' selector='onSocket:didReadPartialDataOfLength:tag:'/>
+<method type64='v32@0:8@16q24' type='v16@0:4@8l12' selector='onSocket:didWriteDataWithTag:'/>
+<method type64='@32@0:8@16@24' type='@16@0:4@8@12' selector='onSocket:wantsRunLoopForNewSocket:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='onSocket:willDisconnectWithError:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='onSocketDidDisconnect:'/>
+<method type64='B24@0:8@16' type='B12@0:4@8' selector='onSocketWillConnect:'/>
+</informal_protocol>
+</signatures>
