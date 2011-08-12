@@ -9,14 +9,26 @@ require 'smtp_server'
 
 class AppDelegate
   attr_writer :window
-    attr_accessor :emails
+  attr_accessor :emails
+  attr_accessor :rawTextView, :sourceTextView, :htmlWebView
+  attr_accessor :fromLabel, :subjectLabel, :dateLabel, :toLabel
 	
 	def awakeFromNib
 		#seedData
-        Thread.new{ SMTPServer.new(:moc => @managedObjectContext) }
+    Thread.new{ SMTPServer.new(:moc => @managedObjectContext) }
 	end
 	
-	
+  def tableViewSelectionDidChange(notification)
+    email_object = @emails.selectedObjects.first
+    @fromLabel.stringValue = email_object.from
+    @subjectLabel.stringValue = email_object.subject
+    @dateLabel.stringValue  = email_object.received
+    @toLabel.stringValue = email_object.to
+    @rawTextView.setString( email_object.raw )
+    @htmlWebView.mainFrame.loadHTMLString(email_object.html,  baseURL: nil)
+  end 
+  
+  
   def seedData
     email = NSEntityDescription.insertNewObjectForEntityForName("Email", inManagedObjectContext:@managedObjectContext)
 		

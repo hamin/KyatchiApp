@@ -14,6 +14,18 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		8F0C5D830EADC1EE007FBAA3 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8F0C5D820EADC1EE007FBAA3 /* AppDelegate.rb */; };
 		8F0C5D890EADC379007FBAA3 /* MacRubyApp.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C5D880EADC379007FBAA3 /* MacRubyApp.xcdatamodel */; };
+		AF28ADCA13F3D0FB00780F36 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF28ADC913F3D0FB00780F36 /* WebKit.framework */; };
+		AF58B1AB13F3522100BDEDFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		AF58B1AC13F3522100BDEDFB /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */; };
+		AF58B1AD13F3522100BDEDFB /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8F0C5D820EADC1EE007FBAA3 /* AppDelegate.rb */; };
+		AF58B1AE13F3522100BDEDFB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD68AC5911C9455700CF9405 /* MainMenu.xib */; };
+		AF58B1AF13F3522100BDEDFB /* generic_server.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFEF232313EEA5A000982A8B /* generic_server.rb */; };
+		AF58B1B013F3522100BDEDFB /* smtp_server.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFEF232513EEA61600982A8B /* smtp_server.rb */; };
+		AF58B1B213F3522100BDEDFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		AF58B1B313F3522100BDEDFB /* MacRubyApp.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C5D880EADC379007FBAA3 /* MacRubyApp.xcdatamodel */; };
+		AF58B1B513F3522100BDEDFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		AF58B1B613F3522100BDEDFB /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE3BE130D8651D900ECA448 /* MacRuby.framework */; };
+		AF58B1BF13F3527900BDEDFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF58B1BE13F3527900BDEDFB /* AppDelegate.m */; };
 		AFEF232413EEA5A000982A8B /* generic_server.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFEF232313EEA5A000982A8B /* generic_server.rb */; };
 		AFEF232613EEA61600982A8B /* smtp_server.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFEF232513EEA61600982A8B /* smtp_server.rb */; };
 		CD68AC5A11C9455700CF9405 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD68AC5911C9455700CF9405 /* MainMenu.xib */; };
@@ -32,6 +44,11 @@
 		8D1107320486CEB800E47090 /* KyatchiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyatchiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0C5D820EADC1EE007FBAA3 /* AppDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
 		8F0C5D880EADC379007FBAA3 /* MacRubyApp.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MacRubyApp.xcdatamodel; sourceTree = "<group>"; };
+		AF28ADC913F3D0FB00780F36 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		AF58B1BA13F3522100BDEDFB /* KyatchiApp copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KyatchiApp copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF58B1BC13F3522100BDEDFB /* KyatchiApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KyatchiApp copy-Info.plist"; path = "/Users/hair/workspace/KyatchiApp/KyatchiApp copy-Info.plist"; sourceTree = "<absolute>"; };
+		AF58B1BD13F3527900BDEDFB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF58B1BE13F3527900BDEDFB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AFEF232313EEA5A000982A8B /* generic_server.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = generic_server.rb; sourceTree = "<group>"; };
 		AFEF232513EEA61600982A8B /* smtp_server.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = smtp_server.rb; sourceTree = "<group>"; };
 		CD65E1A611C941D600E46B3D /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -42,8 +59,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF28ADCA13F3D0FB00780F36 /* WebKit.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF58B1B413F3522100BDEDFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF58B1B513F3522100BDEDFB /* Cocoa.framework in Frameworks */,
+				AF58B1B613F3522100BDEDFB /* MacRuby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +98,7 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF28ADC913F3D0FB00780F36 /* WebKit.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
@@ -82,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* KyatchiApp.app */,
+				AF58B1BA13F3522100BDEDFB /* KyatchiApp copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +124,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				8F0C5D880EADC379007FBAA3 /* MacRubyApp.xcdatamodel */,
+				AF58B1BC13F3522100BDEDFB /* KyatchiApp copy-Info.plist */,
 			);
 			name = KyatchiApp;
 			sourceTree = "<group>";
@@ -105,6 +135,8 @@
 				8F0C5D820EADC1EE007FBAA3 /* AppDelegate.rb */,
 				4DE339F60D74FCDD00ADB6EE /* rb_main.rb */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				AF58B1BD13F3527900BDEDFB /* AppDelegate.h */,
+				AF58B1BE13F3527900BDEDFB /* AppDelegate.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -112,9 +144,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CD68AC5911C9455700CF9405 /* MainMenu.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				CD68AC5911C9455700CF9405 /* MainMenu.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -166,6 +198,24 @@
 			productReference = 8D1107320486CEB800E47090 /* KyatchiApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AF58B1A913F3522100BDEDFB /* Workaround */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF58B1B713F3522100BDEDFB /* Build configuration list for PBXNativeTarget "Workaround" */;
+			buildPhases = (
+				AF58B1AA13F3522100BDEDFB /* Resources */,
+				AF58B1B113F3522100BDEDFB /* Sources */,
+				AF58B1B413F3522100BDEDFB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Workaround;
+			productInstallPath = "$(HOME)/Applications";
+			productName = KyatchiApp;
+			productReference = AF58B1BA13F3522100BDEDFB /* KyatchiApp copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,6 +240,7 @@
 			targets = (
 				8D1107260486CEB800E47090 /* KyatchiApp */,
 				AFEF232B13EEBAF800982A8B /* Deployment */,
+				AF58B1A913F3522100BDEDFB /* Workaround */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +259,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF58B1AA13F3522100BDEDFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF58B1AB13F3522100BDEDFB /* InfoPlist.strings in Resources */,
+				AF58B1AC13F3522100BDEDFB /* rb_main.rb in Resources */,
+				AF58B1AD13F3522100BDEDFB /* AppDelegate.rb in Resources */,
+				AF58B1AE13F3522100BDEDFB /* MainMenu.xib in Resources */,
+				AF58B1AF13F3522100BDEDFB /* generic_server.rb in Resources */,
+				AF58B1B013F3522100BDEDFB /* smtp_server.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -217,6 +281,16 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				8F0C5D890EADC379007FBAA3 /* MacRubyApp.xcdatamodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF58B1B113F3522100BDEDFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF58B1B213F3522100BDEDFB /* main.m in Sources */,
+				AF58B1B313F3522100BDEDFB /* MacRubyApp.xcdatamodel in Sources */,
+				AF58B1BF13F3527900BDEDFB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +316,43 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AF58B1B813F3522100BDEDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "KyatchiApp copy-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "KyatchiApp copy";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		AF58B1B913F3522100BDEDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "KyatchiApp copy-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "KyatchiApp copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		AFEF232D13EEBAF900982A8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -330,29 +441,38 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = "";
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				SDKROOT = "";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AF58B1B713F3522100BDEDFB /* Build configuration list for PBXNativeTarget "Workaround" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF58B1B813F3522100BDEDFB /* Debug */,
+				AF58B1B913F3522100BDEDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AFEF232C13EEBAF900982A8B /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -360,6 +480,7 @@
 				AFEF232E13EEBAF900982A8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "KyatchiApp" */ = {
 			isa = XCConfigurationList;

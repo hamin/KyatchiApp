@@ -99,13 +99,18 @@ class SMTPServer < GenericServer
       mail = Mail.new(full_data)
       email = NSEntityDescription.insertNewObjectForEntityForName("Email", inManagedObjectContext:@moc)
       
+      alert = NSAlert.new
+      alert.setMessageText(mail.inspect)
+      alert.runModal()
+      
+      
       email.from = mail.from
       email.to = mail.to
       email.subject = mail.subject
       email.received = NSDate.date
       email.raw = mail.raw_source
       email.html = mail.html_part
-      email.plain = mail.plain_part
+      #email.plain = mail.plain_part
       
       @moc.save(nil)
       
