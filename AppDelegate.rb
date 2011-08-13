@@ -10,7 +10,7 @@ require 'smtp_server'
 class AppDelegate
   attr_writer :window
   attr_accessor :emails
-  attr_accessor :rawTextView, :sourceTextView, :htmlWebView
+  attr_accessor :rawTextView, :plainTextView, :htmlWebView
   attr_accessor :fromLabel, :subjectLabel, :dateLabel, :toLabel
 	
 	def awakeFromNib
@@ -25,6 +25,7 @@ class AppDelegate
     @dateLabel.stringValue  = email_object.received
     @toLabel.stringValue = email_object.to
     @rawTextView.setString( email_object.raw )
+    @plainTextView.setString( email_object.plain )
     @htmlWebView.mainFrame.loadHTMLString(email_object.html,  baseURL: nil)
   end 
   

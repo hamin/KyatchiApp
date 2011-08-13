@@ -14,6 +14,8 @@
 @synthesize dateLabel;
 @synthesize toLabel;
 @synthesize htmlWebView;
+@synthesize plainTextView;
+@synthesize plainTextView;
 @synthesize rawTextView;
 @synthesize fromLabel;
 @synthesize subjectLabel;

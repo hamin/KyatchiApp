@@ -15,6 +15,8 @@
   NSTextField *dateLabel;
   NSTextField *toLabel;
   WebView *htmlWebView;
+  NSTextView *plainTextView;
+  NSTabViewItem *plainTextView;
 }
 @property (assign) IBOutlet NSTextView *rawTextView;
 @property (assign) IBOutlet NSTextField *fromLabel;
@@ -22,5 +24,6 @@
 @property (assign) IBOutlet NSTextField *dateLabel;
 @property (assign) IBOutlet NSTextField *toLabel;
 @property (assign) IBOutlet WebView *htmlWebView;
+@property (assign) IBOutlet NSTextView *plainTextView;
 
 @end

@@ -26,6 +26,7 @@
 		AF58B1B513F3522100BDEDFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		AF58B1B613F3522100BDEDFB /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE3BE130D8651D900ECA448 /* MacRuby.framework */; };
 		AF58B1BF13F3527900BDEDFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF58B1BE13F3527900BDEDFB /* AppDelegate.m */; };
+		AFDC278213F50D1B00A1B003 /* email_store.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFDC278113F50D1B00A1B003 /* email_store.rb */; };
 		AFEF232413EEA5A000982A8B /* generic_server.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFEF232313EEA5A000982A8B /* generic_server.rb */; };
 		AFEF232613EEA61600982A8B /* smtp_server.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFEF232513EEA61600982A8B /* smtp_server.rb */; };
 		CD68AC5A11C9455700CF9405 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD68AC5911C9455700CF9405 /* MainMenu.xib */; };
@@ -49,6 +50,7 @@
 		AF58B1BC13F3522100BDEDFB /* KyatchiApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KyatchiApp copy-Info.plist"; path = "/Users/hair/workspace/KyatchiApp/KyatchiApp copy-Info.plist"; sourceTree = "<absolute>"; };
 		AF58B1BD13F3527900BDEDFB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF58B1BE13F3527900BDEDFB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AFDC278113F50D1B00A1B003 /* email_store.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = email_store.rb; sourceTree = "<group>"; };
 		AFEF232313EEA5A000982A8B /* generic_server.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = generic_server.rb; sourceTree = "<group>"; };
 		AFEF232513EEA61600982A8B /* smtp_server.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = smtp_server.rb; sourceTree = "<group>"; };
 		CD65E1A611C941D600E46B3D /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				AFEF232313EEA5A000982A8B /* generic_server.rb */,
 				AFEF232513EEA61600982A8B /* smtp_server.rb */,
+				AFDC278113F50D1B00A1B003 /* email_store.rb */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				CD68AC5A11C9455700CF9405 /* MainMenu.xib in Resources */,
 				AFEF232413EEA5A000982A8B /* generic_server.rb in Resources */,
 				AFEF232613EEA61600982A8B /* smtp_server.rb in Resources */,
+				AFDC278213F50D1B00A1B003 /* email_store.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

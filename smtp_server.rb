@@ -8,8 +8,8 @@
 
 
 require 'generic_server.rb'
-require 'mail'
-# require 'store.rb'
+#require 'mail'
+require 'email_store'
 
 # Basic SMTP server
 
@@ -19,6 +19,7 @@ class SMTPServer < GenericServer
   # Create new server listening on port 25
   def initialize(opts={})
     self.client_data = Hash.new
+    self.eml = ""
     @moc = opts[:moc]
     super(:port => 1025)
   end
@@ -73,7 +74,7 @@ class SMTPServer < GenericServer
     end
   end
   
-  # Markes client sending data
+  # Marks client sending data
   def data(client)
     set_client_data(client, :sending_data, true)
     respond(client, 354)
@@ -82,6 +83,7 @@ class SMTPServer < GenericServer
   # Resets local client store
   def rset(client)
     self.client_data[client.object_id] = Hash.new
+    self.eml = ""
   end
   
   # Adds full_data to incoming mail message
@@ -89,30 +91,9 @@ class SMTPServer < GenericServer
   # We'll store the mail when full_data == "."
   def append_data(client, full_data)
     if full_data.gsub(/[\r\n]/,"") == "."
-      # Store.instance.add(
-      #   get_client_data(client, :from).to_s,
-      #   get_client_data(client, :to).to_s,
-      #   get_client_data(client, :data).to_s
-      # )
+      
+      EmailStore.instance.add_message( @eml, @moc )
       respond(client, 250)
-      
-      mail = Mail.new(full_data)
-      email = NSEntityDescription.insertNewObjectForEntityForName("Email", inManagedObjectContext:@moc)
-      
-      alert = NSAlert.new
-      alert.setMessageText(mail.inspect)
-      alert.runModal()
-      
-      
-      email.from = mail.from
-      email.to = mail.to
-      email.subject = mail.subject
-      email.received = NSDate.date
-      email.raw = mail.raw_source
-      email.html = mail.html_part
-      #email.plain = mail.plain_part
-      
-      @moc.save(nil)
       
       NSLog "Received mail from #{get_client_data(client, :from).to_s} with recipient #{get_client_data(client, :to).to_s}"
       else
@@ -147,9 +128,9 @@ class SMTPServer < GenericServer
   504 => "Command parameter not implemented",
   211 => "System status, or system help respond",
   214 => "Help message",
-  220 => "Bluerail Post Office Service ready",
-  221 => "Bluerail Post Office Service closing transmission channel",
-  421 => "Bluerail Post Office Service not available,",
+  220 => "Kyatchi Mail Service ready",
+  221 => "Kyatchi Mail Service closing transmission channel",
+  421 => "Kyatchi Mail Service not available,",
   250 => "Requested mail action okay, completed",
   251 => "User not local; will forward to <forward-path>",
   450 => "Requested mail action not taken: mailbox unavailable",

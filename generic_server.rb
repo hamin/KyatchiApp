@@ -8,6 +8,7 @@
 
 require 'socket'
 class GenericServer
+  attr_accessor :eml
   
   def initialize(options)
     @port = options[:port]
@@ -25,6 +26,7 @@ class GenericServer
           # Keep processing commands until somebody closed the connection
           begin
             input = client.gets
+            @eml += input
             
             # The first word of a line should contain the command
             command = input.to_s.gsub(/ .*/,"").upcase.gsub(/[\r\n]/,"")
