@@ -16,6 +16,7 @@
   NSTextField *toLabel;
   WebView *htmlWebView;
   NSTextView *plainTextView;
+  WebView *htmlSourceWebView;
   NSTabViewItem *plainTextView;
 }
 @property (assign) IBOutlet NSTextView *rawTextView;
@@ -25,5 +26,6 @@
 @property (assign) IBOutlet NSTextField *toLabel;
 @property (assign) IBOutlet WebView *htmlWebView;
 @property (assign) IBOutlet NSTextView *plainTextView;
+@property (assign) IBOutlet WebView *htmlSourceWebView;
 
 @end

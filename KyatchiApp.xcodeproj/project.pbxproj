@@ -168,7 +168,7 @@
 /* Begin PBXLegacyTarget section */
 		AFEF232B13EEBAF800982A8B /* Deployment */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "--compile --embed --gem mail";
+			buildArgumentsString = "--compile --embed --gem mail --gem coderay";
 			buildConfigurationList = AFEF232C13EEBAF900982A8B /* Build configuration list for PBXLegacyTarget "Deployment" */;
 			buildPhases = (
 			);

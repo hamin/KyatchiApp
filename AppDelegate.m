@@ -15,6 +15,7 @@
 @synthesize toLabel;
 @synthesize htmlWebView;
 @synthesize plainTextView;
+@synthesize htmlSourceWebView;
 @synthesize plainTextView;
 @synthesize rawTextView;
 @synthesize fromLabel;

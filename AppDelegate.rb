@@ -6,11 +6,12 @@
 # Copyright __MyCompanyName__ 2011. All rights reserved.
 #÷
 require 'smtp_server'
+require 'coderay'
 
 class AppDelegate
   attr_writer :window
   attr_accessor :emails
-  attr_accessor :rawTextView, :plainTextView, :htmlWebView
+  attr_accessor :rawTextView, :plainTextView, :htmlWebView, :htmlSourceWebView
   attr_accessor :fromLabel, :subjectLabel, :dateLabel, :toLabel
 	
 	def awakeFromNib
@@ -27,6 +28,7 @@ class AppDelegate
     @rawTextView.setString( email_object.raw )
     @plainTextView.setString( email_object.plain )
     @htmlWebView.mainFrame.loadHTMLString(email_object.html,  baseURL: nil)
+    @htmlSourceWebView.mainFrame.loadHTMLString(CodeRay.scan(email_object.html,:html).page,  baseURL: nil)
   end 
   
   
