@@ -6,7 +6,6 @@
 # Copyright __MyCompanyName__ 2011. All rights reserved.
 #÷
 require 'smtp_server'
-require 'coderay'
 
 class AppDelegate
   attr_writer :window
@@ -21,14 +20,21 @@ class AppDelegate
 	
   def tableViewSelectionDidChange(notification)
     email_object = @emails.selectedObjects.first
+    
     @fromLabel.stringValue = email_object.from
     @subjectLabel.stringValue = email_object.subject
     @dateLabel.stringValue  = email_object.received
     @toLabel.stringValue = email_object.to
     @rawTextView.setString( email_object.raw )
     @plainTextView.setString( email_object.plain )
-    @htmlWebView.mainFrame.loadHTMLString(email_object.html,  baseURL: nil)
-    @htmlSourceWebView.mainFrame.loadHTMLString(CodeRay.scan(email_object.html,:html).page,  baseURL: nil)
+    
+    unless email_object.blank?
+      load_webviews = Proc.new do
+        @htmlWebView.mainFrame.loadHTMLString(email_object.html,  baseURL: nil)
+        @htmlSourceWebView.mainFrame.loadHTMLString(email_object.html_source,  baseURL: nil)
+      end
+      load_webviews.performSelectorOnMainThread( 'call', withObject: nil, waitUntilDone: true)
+    end  
   end 
   
   

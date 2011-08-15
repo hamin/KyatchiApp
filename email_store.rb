@@ -7,6 +7,7 @@
 #
 require 'singleton'
 require 'mail'
+require 'coderay'
 class EmailStore
   include Singleton
   
@@ -27,6 +28,7 @@ class EmailStore
     
     if mail.multipart?
       new_email.html = mail.html_part.decoded
+      new_email.html_source =  CodeRay.scan(mail.html_part.decoded,:html).page
       new_email.plain = mail.text_part.decoded
       new_email.raw = mail.to_s
     else

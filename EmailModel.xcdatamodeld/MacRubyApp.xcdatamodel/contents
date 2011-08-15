@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="MacRubyApp.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="562" systemVersion="11A2063" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Email" representedClassName="NSManagedObject">
+        <attribute name="from" attributeType="String" indexed="YES"/>
+        <attribute name="html" optional="YES" attributeType="String"/>
+        <attribute name="plain" optional="YES" attributeType="String"/>
+        <attribute name="raw" optional="YES" attributeType="String"/>
+        <attribute name="received" attributeType="Date" indexed="YES"/>
+        <attribute name="subject" attributeType="String" indexed="YES"/>
+        <attribute name="to" attributeType="String" indexed="YES"/>
+    </entity>
+    <elements>
+        <element name="Email" positionX="261" positionY="198" width="128" height="165"/>
+    </elements>
+</model>

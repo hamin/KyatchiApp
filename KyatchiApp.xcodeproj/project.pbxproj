@@ -13,7 +13,6 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		8F0C5D830EADC1EE007FBAA3 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8F0C5D820EADC1EE007FBAA3 /* AppDelegate.rb */; };
-		8F0C5D890EADC379007FBAA3 /* MacRubyApp.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C5D880EADC379007FBAA3 /* MacRubyApp.xcdatamodel */; };
 		AF28ADCA13F3D0FB00780F36 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF28ADC913F3D0FB00780F36 /* WebKit.framework */; };
 		AF58B1AB13F3522100BDEDFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		AF58B1AC13F3522100BDEDFB /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */; };
@@ -22,10 +21,10 @@
 		AF58B1AF13F3522100BDEDFB /* generic_server.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFEF232313EEA5A000982A8B /* generic_server.rb */; };
 		AF58B1B013F3522100BDEDFB /* smtp_server.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFEF232513EEA61600982A8B /* smtp_server.rb */; };
 		AF58B1B213F3522100BDEDFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
-		AF58B1B313F3522100BDEDFB /* MacRubyApp.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C5D880EADC379007FBAA3 /* MacRubyApp.xcdatamodel */; };
 		AF58B1B513F3522100BDEDFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		AF58B1B613F3522100BDEDFB /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE3BE130D8651D900ECA448 /* MacRuby.framework */; };
 		AF58B1BF13F3527900BDEDFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF58B1BE13F3527900BDEDFB /* AppDelegate.m */; };
+		AFD0BA8913F7EDA7003CD24D /* EmailModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFD0BA8613F7EDA7003CD24D /* EmailModel.xcdatamodeld */; };
 		AFDC278213F50D1B00A1B003 /* email_store.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFDC278113F50D1B00A1B003 /* email_store.rb */; };
 		AFEF232413EEA5A000982A8B /* generic_server.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFEF232313EEA5A000982A8B /* generic_server.rb */; };
 		AFEF232613EEA61600982A8B /* smtp_server.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFEF232513EEA61600982A8B /* smtp_server.rb */; };
@@ -44,12 +43,14 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* KyatchiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyatchiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0C5D820EADC1EE007FBAA3 /* AppDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
-		8F0C5D880EADC379007FBAA3 /* MacRubyApp.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MacRubyApp.xcdatamodel; sourceTree = "<group>"; };
 		AF28ADC913F3D0FB00780F36 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		AF58B1BA13F3522100BDEDFB /* KyatchiApp copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KyatchiApp copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF58B1BC13F3522100BDEDFB /* KyatchiApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KyatchiApp copy-Info.plist"; path = "/Users/hair/workspace/KyatchiApp/KyatchiApp copy-Info.plist"; sourceTree = "<absolute>"; };
 		AF58B1BD13F3527900BDEDFB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF58B1BE13F3527900BDEDFB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AFD0BA8713F7EDA7003CD24D /* EmailModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "EmailModel 2.xcdatamodel"; sourceTree = "<group>"; };
+		AFD0BA8813F7EDA7003CD24D /* MacRubyApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MacRubyApp.xcdatamodel; sourceTree = "<group>"; };
+		AFD0BA8A13F7F0C6003CD24D /* EmailModel 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "EmailModel 3.xcdatamodel"; sourceTree = "<group>"; };
 		AFDC278113F50D1B00A1B003 /* email_store.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = email_store.rb; sourceTree = "<group>"; };
 		AFEF232313EEA5A000982A8B /* generic_server.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = generic_server.rb; sourceTree = "<group>"; };
 		AFEF232513EEA61600982A8B /* smtp_server.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = smtp_server.rb; sourceTree = "<group>"; };
@@ -126,8 +127,8 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				8F0C5D880EADC379007FBAA3 /* MacRubyApp.xcdatamodel */,
 				AF58B1BC13F3522100BDEDFB /* KyatchiApp copy-Info.plist */,
+				AFD0BA8613F7EDA7003CD24D /* EmailModel.xcdatamodeld */,
 			);
 			name = KyatchiApp;
 			sourceTree = "<group>";
@@ -284,7 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				8F0C5D890EADC379007FBAA3 /* MacRubyApp.xcdatamodel in Sources */,
+				AFD0BA8913F7EDA7003CD24D /* EmailModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +294,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF58B1B213F3522100BDEDFB /* main.m in Sources */,
-				AF58B1B313F3522100BDEDFB /* MacRubyApp.xcdatamodel in Sources */,
 				AF58B1BF13F3527900BDEDFB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +505,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AFD0BA8613F7EDA7003CD24D /* EmailModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AFD0BA8A13F7F0C6003CD24D /* EmailModel 3.xcdatamodel */,
+				AFD0BA8713F7EDA7003CD24D /* EmailModel 2.xcdatamodel */,
+				AFD0BA8813F7EDA7003CD24D /* MacRubyApp.xcdatamodel */,
+			);
+			currentVersion = AFD0BA8A13F7F0C6003CD24D /* EmailModel 3.xcdatamodel */;
+			path = EmailModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }
