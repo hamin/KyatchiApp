@@ -8,20 +8,31 @@
 
 
 require 'generic_server.rb'
-#require 'mail'
 require 'email_store'
 
 # Basic SMTP server
 
 class SMTPServer < GenericServer
-  attr_accessor :client_data, :moc
+  attr_accessor :moc
   
-  # Create new server listening on port 25
-  def initialize(opts={})
-    self.client_data = Hash.new
-    self.eml = ""
+  # Create new server listening on port
+  def initialize(host, port, opts={})
     @moc = opts[:moc]
-    super(:port => 1025)
+    super(host, port, opts)
+  end
+  
+  def start
+    trap 'INT' do
+      self.close
+      exit
+    end
+    
+    # Ok, let the server do it's thing
+    self.open
+  end
+  
+  def stop
+    self.close
   end
   
   # Send a greeting to client

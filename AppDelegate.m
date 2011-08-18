@@ -16,6 +16,7 @@
 @synthesize htmlWebView;
 @synthesize plainTextView;
 @synthesize htmlSourceWebView;
+@synthesize emails;
 @synthesize plainTextView;
 @synthesize rawTextView;
 @synthesize fromLabel;

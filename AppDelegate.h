@@ -17,6 +17,7 @@
   WebView *htmlWebView;
   NSTextView *plainTextView;
   WebView *htmlSourceWebView;
+  NSArrayController *emails;
   NSTabViewItem *plainTextView;
 }
 @property (assign) IBOutlet NSTextView *rawTextView;
@@ -27,5 +28,6 @@
 @property (assign) IBOutlet WebView *htmlWebView;
 @property (assign) IBOutlet NSTextView *plainTextView;
 @property (assign) IBOutlet WebView *htmlSourceWebView;
+@property (assign) IBOutlet NSArrayController *emails;
 
 @end

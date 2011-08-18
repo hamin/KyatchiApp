@@ -2179,7 +2179,6 @@
 															<string key="NSFrame">{{-7, 14}, {692, 234}}</string>
 															<reference key="NSSuperview" ref="997897795"/>
 															<reference key="NSWindow"/>
-															<reference key="NSNextKeyView" ref="25669210"/>
 															<int key="NSViewLayerContentsRedrawPolicy">2</int>
 															<string key="NSReuseIdentifierKey">_NS:461</string>
 															<object class="NSMutableArray" key="NSTabViewItems">
@@ -2702,7 +2701,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="738997423"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1366, 768}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1366, 746}}</string>
 				<string key="NSMinSize">{600, 441}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
@@ -3728,20 +3727,20 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<int key="connectionID">989</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">remove:</string>
-						<reference key="source" ref="149541962"/>
-						<reference key="destination" ref="484276887"/>
-					</object>
-					<int key="connectionID">1004</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">htmlSourceWebView</string>
 						<reference key="source" ref="32908450"/>
 						<reference key="destination" ref="695414890"/>
 					</object>
 					<int key="connectionID">1010</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">remove:</string>
+						<reference key="source" ref="149541962"/>
+						<reference key="destination" ref="484276887"/>
+					</object>
+					<int key="connectionID">1012</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -5918,7 +5917,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">1010</int>
+			<int key="maxID">1012</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -5931,6 +5930,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>dateLabel</string>
+							<string>emails</string>
 							<string>fromLabel</string>
 							<string>htmlSourceWebView</string>
 							<string>htmlWebView</string>
@@ -5942,6 +5942,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSTextField</string>
+							<string>NSArrayController</string>
 							<string>NSTextField</string>
 							<string>WebView</string>
 							<string>WebView</string>
@@ -5956,6 +5957,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>dateLabel</string>
+							<string>emails</string>
 							<string>fromLabel</string>
 							<string>htmlSourceWebView</string>
 							<string>htmlWebView</string>
@@ -5969,6 +5971,10 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<object class="IBToOneOutletInfo">
 								<string key="name">dateLabel</string>
 								<string key="candidateClassName">NSTextField</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">emails</string>
+								<string key="candidateClassName">NSArrayController</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">fromLabel</string>

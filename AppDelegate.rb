@@ -15,7 +15,10 @@ class AppDelegate
 	
 	def awakeFromNib
 		#seedData
-    Thread.new{ SMTPServer.new(:moc => @managedObjectContext) }
+    Thread.new{
+      @smtp_server = SMTPServer.new('localhost', 1025, :moc => @managedObjectContext)
+      @smtp_server.start 
+    }
 	end
 	
   def tableViewSelectionDidChange(notification)
