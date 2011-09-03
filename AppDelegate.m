@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "TMSliderControl.h"
 
 @implementation AppDelegate
+@synthesize sliderToolbar;
+@synthesize sliderView;
 @synthesize fromLabel;
 @synthesize subjectLabel;
 @synthesize dateLabel;

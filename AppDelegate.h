@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class TMSliderControl;
 @interface AppDelegate:NSObject<NSApplicationDelegate>{
   NSTextView *rawTextView;
   NSTextField *fromLabel;
@@ -19,6 +19,8 @@
   WebView *htmlSourceWebView;
   NSArrayController *emails;
   NSTabViewItem *plainTextView;
+  NSToolbarItem *sliderToolbar;
+  NSView *sliderView;
 }
 @property (assign) IBOutlet NSTextView *rawTextView;
 @property (assign) IBOutlet NSTextField *fromLabel;
@@ -29,5 +31,11 @@
 @property (assign) IBOutlet NSTextView *plainTextView;
 @property (assign) IBOutlet WebView *htmlSourceWebView;
 @property (assign) IBOutlet NSArrayController *emails;
+@property (assign) IBOutlet TMSliderControl * sliderControl;
+@property (assign) IBOutlet NSToolbarItem *sliderToolbar;
+@property (assign) IBOutlet NSView *sliderView;
+
+- (IBAction)sliderChanged:(id)sender;
+- (IBAction)smallSliderChanged:(id)sender;
 
 @end

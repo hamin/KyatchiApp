@@ -12,14 +12,21 @@ class AppDelegate
   attr_accessor :emails
   attr_accessor :rawTextView, :plainTextView, :htmlWebView, :htmlSourceWebView
   attr_accessor :fromLabel, :subjectLabel, :dateLabel, :toLabel
+  attr_accessor :sliderControl, :sliderToolbar, :sliderView
 	
 	def awakeFromNib
 		#seedData
+    @sliderToolbar.setView(sliderView)
+    #@sliderControl.setState(NSOnState)
     Thread.new{
       @smtp_server = SMTPServer.new('localhost', 1025, :moc => @managedObjectContext)
       @smtp_server.start 
     }
 	end
+  
+  def sliderChanged(sender)
+    NSLog "SLIDER WAS CHANGED!!!!"
+  end  
 	
   def tableViewSelectionDidChange(notification)
     email_object = @emails.selectedObjects.first
