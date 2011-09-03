@@ -17,7 +17,7 @@ class AppDelegate
 	def awakeFromNib
 		#seedData
     @sliderToolbar.setView(sliderView)
-    #@sliderControl.setState(NSOnState)
+    @sliderControl.setStateNoAction(NSOnState)
     Thread.new{
       @smtp_server = SMTPServer.new('localhost', 1025, :moc => @managedObjectContext)
       @smtp_server.start 

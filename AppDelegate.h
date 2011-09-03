@@ -19,6 +19,7 @@
   WebView *htmlSourceWebView;
   NSArrayController *emails;
   NSTabViewItem *plainTextView;
+  TMSliderControl *sliderControl;
   NSToolbarItem *sliderToolbar;
   NSView *sliderView;
 }
@@ -31,7 +32,7 @@
 @property (assign) IBOutlet NSTextView *plainTextView;
 @property (assign) IBOutlet WebView *htmlSourceWebView;
 @property (assign) IBOutlet NSArrayController *emails;
-@property (assign) IBOutlet TMSliderControl * sliderControl;
+@property (assign) IBOutlet TMSliderControl *sliderControl;
 @property (assign) IBOutlet NSToolbarItem *sliderToolbar;
 @property (assign) IBOutlet NSView *sliderView;
 

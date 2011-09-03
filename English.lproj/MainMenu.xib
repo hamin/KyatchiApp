@@ -1364,10 +1364,9 @@
 								<string key="NSToolbarItemPaletteLabel">Custom View</string>
 								<nil key="NSToolbarItemToolTip"/>
 								<object class="NSCustomView" key="NSToolbarItemView" id="928508551">
-									<reference key="NSNextResponder"/>
+									<nil key="NSNextResponder"/>
 									<int key="NSvFlags">268</int>
 									<string key="NSFrame">{{0, 14}, {163, 96}}</string>
-									<reference key="NSSuperview"/>
 									<string key="NSReuseIdentifierKey">_NS:499</string>
 									<string key="NSClassName">NSView</string>
 								</object>
@@ -1498,7 +1497,7 @@
 							</object>
 						</object>
 					</object>
-					<object class="NSMutableArray" key="NSToolbarIBAllowedItems">
+					<object class="NSArray" key="NSToolbarIBAllowedItems">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<reference ref="231363172"/>
 						<reference ref="638916897"/>
@@ -1776,7 +1775,7 @@
 																			<string key="NSFrameSize">{676, 138}</string>
 																			<reference key="NSSuperview" ref="924240347"/>
 																			<reference key="NSWindow"/>
-																			<reference key="NSNextKeyView" ref="934437786"/>
+																			<reference key="NSNextKeyView" ref="842893179"/>
 																			<int key="NSViewLayerContentsRedrawPolicy">2</int>
 																			<bool key="NSEnabled">YES</bool>
 																			<object class="NSTableHeaderView" key="NSHeaderView" id="704566772">
@@ -1996,7 +1995,7 @@
 															<string key="NSFrame">{{0, -32}, {678, 156}}</string>
 															<reference key="NSSuperview" ref="1037555375"/>
 															<reference key="NSWindow"/>
-															<reference key="NSNextKeyView" ref="842893179"/>
+															<reference key="NSNextKeyView" ref="924240347"/>
 															<int key="NSViewLayerContentsRedrawPolicy">2</int>
 															<int key="NSsFlags">133682</int>
 															<reference key="NSVScroller" ref="934437786"/>
@@ -2197,7 +2196,6 @@
 															<string key="NSFrame">{{-7, 14}, {692, 234}}</string>
 															<reference key="NSSuperview" ref="997897795"/>
 															<reference key="NSWindow"/>
-															<reference key="NSNextKeyView" ref="275470571"/>
 															<int key="NSViewLayerContentsRedrawPolicy">2</int>
 															<string key="NSReuseIdentifierKey">_NS:461</string>
 															<object class="NSMutableArray" key="NSTabViewItems">
@@ -2736,7 +2734,6 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<string key="NSFrame">{{35, 6}, {93, 28}}</string>
 						<reference key="NSSuperview" ref="526567061"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<int key="NSViewLayerContentsRedrawPolicy">2</int>
 						<string key="NSClassName">TMSliderControl</string>
 					</object>
@@ -3817,6 +3814,14 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<reference key="destination" ref="667243629"/>
 					</object>
 					<int key="connectionID">1363</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">sliderControl</string>
+						<reference key="source" ref="32908450"/>
+						<reference key="destination" ref="826999358"/>
+					</object>
+					<int key="connectionID">1364</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -6022,7 +6027,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">1363</int>
+			<int key="maxID">1364</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -6285,7 +6290,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{15, 15}</string>
+				<string>{10, 10}</string>
 				<string>{9, 8}</string>
 				<string>{7, 2}</string>
 				<string>{32, 32}</string>
