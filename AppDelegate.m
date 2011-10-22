@@ -10,22 +10,6 @@
 #import "TMSliderControl.h"
 
 @implementation AppDelegate
-@synthesize sliderToolbar;
-@synthesize sliderView;
-@synthesize fromLabel;
-@synthesize subjectLabel;
-@synthesize dateLabel;
-@synthesize toLabel;
-@synthesize htmlWebView;
-@synthesize plainTextView;
-@synthesize htmlSourceWebView;
-@synthesize emails;
-@synthesize plainTextView;
-@synthesize rawTextView;
-@synthesize fromLabel;
-@synthesize subjectLabel;
-@synthesize dateLabel;
-@synthesize toLabel;
 
 - (id)init
 {
