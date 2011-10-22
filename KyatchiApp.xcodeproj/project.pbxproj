@@ -28,6 +28,10 @@
 		AFDC278213F50D1B00A1B003 /* email_store.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFDC278113F50D1B00A1B003 /* email_store.rb */; };
 		AFEF232413EEA5A000982A8B /* generic_server.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFEF232313EEA5A000982A8B /* generic_server.rb */; };
 		AFEF232613EEA61600982A8B /* smtp_server.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFEF232513EEA61600982A8B /* smtp_server.rb */; };
+		AFF301D81415DB8C00C77203 /* logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = AFF301D71415DB8C00C77203 /* logo.icns */; };
+		AFF301D91415DB8C00C77203 /* logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = AFF301D71415DB8C00C77203 /* logo.icns */; };
+		AFF301DC1415DDED00C77203 /* logobig.icns in Resources */ = {isa = PBXBuildFile; fileRef = AFF301DB1415DDED00C77203 /* logobig.icns */; };
+		AFF301DD1415DDED00C77203 /* logobig.icns in Resources */ = {isa = PBXBuildFile; fileRef = AFF301DB1415DDED00C77203 /* logobig.icns */; };
 		AFFEF105140A5930003FC5A0 /* TMSliderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEF104140A5930003FC5A0 /* TMSliderControl.m */; };
 		AFFEF106140A5930003FC5A0 /* TMSliderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEF104140A5930003FC5A0 /* TMSliderControl.m */; };
 		AFFEF110140A5955003FC5A0 /* SmallSliderHandle.png in Resources */ = {isa = PBXBuildFile; fileRef = AFFEF108140A5955003FC5A0 /* SmallSliderHandle.png */; };
@@ -72,6 +76,8 @@
 		AFDC278113F50D1B00A1B003 /* email_store.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = email_store.rb; sourceTree = "<group>"; };
 		AFEF232313EEA5A000982A8B /* generic_server.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = generic_server.rb; sourceTree = "<group>"; };
 		AFEF232513EEA61600982A8B /* smtp_server.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = smtp_server.rb; sourceTree = "<group>"; };
+		AFF301D71415DB8C00C77203 /* logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = logo.icns; sourceTree = "<group>"; };
+		AFF301DB1415DDED00C77203 /* logobig.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = logobig.icns; sourceTree = "<group>"; };
 		AFFEF103140A5930003FC5A0 /* TMSliderControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMSliderControl.h; sourceTree = "<group>"; };
 		AFFEF104140A5930003FC5A0 /* TMSliderControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMSliderControl.m; sourceTree = "<group>"; };
 		AFFEF108140A5955003FC5A0 /* SmallSliderHandle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallSliderHandle.png; sourceTree = "<group>"; };
@@ -178,6 +184,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AFF301DB1415DDED00C77203 /* logobig.icns */,
+				AFF301D71415DB8C00C77203 /* logo.icns */,
 				AFFEF108140A5955003FC5A0 /* SmallSliderHandle.png */,
 				AFFEF109140A5955003FC5A0 /* SmallSliderHandleDown.png */,
 				AFFEF10A140A5955003FC5A0 /* SmallSliderWellOff.png */,
@@ -264,7 +272,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0420;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "KyatchiApp" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -307,6 +315,8 @@
 				AFFEF11A140A5955003FC5A0 /* SliderHandleDown.png in Resources */,
 				AFFEF11C140A5955003FC5A0 /* SliderHandle.png in Resources */,
 				AFFEF11E140A5955003FC5A0 /* OverlayMask.png in Resources */,
+				AFF301D81415DB8C00C77203 /* logo.icns in Resources */,
+				AFF301DC1415DDED00C77203 /* logobig.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +338,8 @@
 				AFFEF11B140A5955003FC5A0 /* SliderHandleDown.png in Resources */,
 				AFFEF11D140A5955003FC5A0 /* SliderHandle.png in Resources */,
 				AFFEF11F140A5955003FC5A0 /* OverlayMask.png in Resources */,
+				AFF301D91415DB8C00C77203 /* logo.icns in Resources */,
+				AFF301DD1415DDED00C77203 /* logobig.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

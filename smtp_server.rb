@@ -21,14 +21,14 @@ class SMTPServer < GenericServer
     super(host, port, opts)
   end
   
-  def start
-    trap 'INT' do
-      self.close
-      exit
-    end
+  def start(restart=false)
+    #trap 'INT' do
+    #  self.close
+    #  exit
+    #end
     
     # Ok, let the server do it's thing
-    self.open
+    restart == true ? self.open(true) : self.open(false)
   end
   
   def stop

@@ -20,12 +20,20 @@ class AppDelegate
     @sliderControl.setStateNoAction(NSOnState)
     Thread.new{
       @smtp_server = SMTPServer.new('localhost', 1025, :moc => @managedObjectContext)
-      @smtp_server.start 
+      @smtp_server.start(false) 
     }
 	end
   
   def sliderChanged(sender)
     NSLog "SLIDER WAS CHANGED!!!!"
+    NSLog "THIS IS SLIDER CONtroL stATE: #{@sliderControl.state}"
+    if @sliderControl.state == 0
+      @smtp_server.stop
+    elsif @sliderControl.state == 1
+      NSLog "THIS IS SMTP SERVER BJECT!!!!! #{@smtp_server}"
+      
+      @smtp_server.start(true)
+    end  
   end  
 	
   def tableViewSelectionDidChange(notification)

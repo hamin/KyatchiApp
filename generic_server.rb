@@ -13,7 +13,8 @@ class GenericServer
   def initialize(host, port, opts={})
     self.client_data = Hash.new
     self.eml = ""
-    
+    @host = host
+    @port = port
     @socket = TCPServer.new(host, port)
     @socket.listen(50)
     @status = :closed # Start closed and give the server time to start
@@ -23,10 +24,15 @@ class GenericServer
     # log "initialization complete."
   end
   
-  def open
+  def open(restart=false)
     # log "opening..."
     NSLog "opening..."
-
+    
+    if restart == true
+      @socket = TCPServer.new(@host, @port)
+      @socket.listen(50)
+      #@status = :closed  
+    end  
     @status = :open
     while (@status == :open)
 
@@ -70,13 +76,13 @@ class GenericServer
     # 60 seconds to empty the request queue
     Dispatch::Source.timer(60, 0, 1, Dispatch::Queue.concurrent) do
       puts "Timed out waiting for connections to close. Stopping server with pid=#{Process.pid}."
-      exit
+      #exit
     end
     
     #@request_group.wait
-    
+    @socket.close
     puts "All requests completed. Stopping server with pid=#{Process.pid}."      
-    exit
+    #exit
   end
   
   # Respond to client by sending back text
